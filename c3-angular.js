@@ -60,7 +60,7 @@ var counter = Math.ceil((Math.random() * 1000));
 	            			chart.unload();
 	            			chart.load(newVal);
 	            		}
-	            	});
+	            	}, true);
 
 	            },
 	        }
