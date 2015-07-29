@@ -52,6 +52,24 @@ var counter = Math.ceil((Math.random() * 1000));
             });
           };
 
+          scope.$watch('axis', function (newVal, oldVal) {
+            if (scope.axis && chart) {
+              var labels = {};
+              if (newVal.x.label) { labels.x = newVal.x.label; }
+              if (newVal.y.label) { labels.y = newVal.y.label; }
+              chart.axis.labels(labels);
+
+              var range = {min: {}, max: {}};
+              if (newVal.x.min) { range.min.x = newVal.x.min; } // else { range.min.x = undefined; }
+              if (newVal.y.min) { range.min.y = newVal.y.min; } // else { range.min.y = undefined; }
+              if (newVal.x.max) { range.max.x = newVal.x.max; } // else { range.max.x = undefined; }
+              if (newVal.y.max) { range.max.y = newVal.y.max; } // else { range.max.y = undefined; }
+
+              console.log(range);
+              chart.axis.range(range);
+            }
+          }, true);
+
           //update
           scope.$watch('data', function (newVal, oldVal) {
             generateChartId();
