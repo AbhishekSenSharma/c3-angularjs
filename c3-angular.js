@@ -15,7 +15,8 @@ var counter = Math.ceil((Math.random() * 1000));
           color: "=",
           size: "=",
           padding: "=",
-          grid: "="
+          grid: "=",
+          showLegend: "="
         },
         template: "<div></div>",
         link: function (scope, elem, attrs) {
@@ -41,6 +42,7 @@ var counter = Math.ceil((Math.random() * 1000));
             size = scope.size || {};
             padding = scope.padding || {};
             grid = scope.grid || {};
+            showLegend = typeof scope.showLegend === 'undefined' ? true : scope.showLegend;
             chart = c3.generate({
               bindto: '#' + scope.chartid,
               data: scope.data,
@@ -48,7 +50,10 @@ var counter = Math.ceil((Math.random() * 1000));
               color: color,
               size: size,
               padding: padding,
-              grid: grid
+              grid: grid,
+              legend: {
+                show: showLegend
+              }
             });
           };
 
