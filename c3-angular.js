@@ -78,6 +78,7 @@ var counter = Math.ceil((Math.random() * 1000));
             }
             else if (newVal != oldVal) {
               chart.load(newVal);
+	      scope.generateChart();
             }
           }, true);
         }
