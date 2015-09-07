@@ -16,7 +16,16 @@ var counter = Math.ceil((Math.random() * 1000));
           size: "=",
           padding: "=",
           grid: "=",
-          legend: "="
+          legend: "=",
+          point: "=",
+          regions: "=",
+          tooltip: "=",
+          line: "=",
+          area: "=",
+          bar: "=",
+          pie: "=",
+          donut: "=",
+          gauge: "="
         },
         template: "<div></div>",
         link: function (scope, elem, attrs) {
@@ -50,7 +59,16 @@ var counter = Math.ceil((Math.random() * 1000));
               size: size,
               padding: padding,
               grid: grid,
-              legend: scope.legend || {}
+              legend: scope.legend || {},
+              point: scope.point || {},
+              regions: scope.regions || {},
+              tooltip: scope.tooltip || {},
+              line: scope.line || {},
+              area: scope.area || {},
+              bar: scope.bar || {},
+              pie: scope.pie || {},
+              donut: scope.donut || {},
+              gauge: scope.gauge || {}
             });
           };
 
