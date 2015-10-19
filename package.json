@@ -1,5 +1,5 @@
 {
-  "name": "seed3-c3-angularjs",
+  "name": "c3-angularjs",
   "version": "1.0.0",
   "description": "Graph directive using C3",
   "main": "c3-angular.js",
