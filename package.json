@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/MartinNuc/c3-angularjs#readme",
   "dependencies": {
-    "c3": "~0.4.10",
+    "c3": "https://github.com/kahboom/c3",
     "lodash-compat": "~3.10.0",
-    "angular": "~1.2.26"
+    "angular": "^1.4.4"
   }
 }
