@@ -3,7 +3,7 @@
  * @desc Generic directive along with directives for commonly used charts
  */
 
-import c3 from 'c3';
+var c3 = require('c3');
 
 var counter = Math.ceil((Math.random() * 1000));
 (function () {
