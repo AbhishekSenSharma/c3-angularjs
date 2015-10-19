@@ -2,7 +2,7 @@
   "name": "seed3-c3-angularjs",
   "version": "1.0.0",
   "description": "Graph directive using C3",
-  "main": "main.js",
+  "main": "c3-angular.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/MartinNuc/c3-angularjs/issues"
   },
-  "homepage": "https://github.com/MartinNuc/c3-angularjs#readme"
+  "homepage": "https://github.com/MartinNuc/c3-angularjs#readme",
+  "dependencies": {
+    "c3": "~0.4.10",
+    "lodash-compat": "~3.10.0",
+    "angular": "~1.2.26"
+  }
 }
