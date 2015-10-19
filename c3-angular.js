@@ -2,6 +2,9 @@
  * @name C3 angularjs directive
  * @desc Generic directive along with directives for commonly used charts
  */
+
+import c3 from 'c3';
+
 var counter = Math.ceil((Math.random() * 1000));
 (function () {
   angular.module('c3-angularjs', [])
