@@ -94,14 +94,14 @@ var counter = Math.ceil((Math.random() * 1000));
           }, true);
 
           //update
-          scope.$watch('data', function (newVal, oldVal) {
+          scope.$watchGroup(['data', 'grid'], function (newVal, oldVal) {
             generateChartId();
             if (newVal && newVal == oldVal) {
               scope.generateChart();
             }
             else if (newVal != oldVal) {
               chart.load(newVal);
-	      scope.generateChart();
+	          scope.generateChart();
             }
           }, true);
         }
