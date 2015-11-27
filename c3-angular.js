@@ -3,8 +3,6 @@
  * @desc Generic directive along with directives for commonly used charts
  */
 
-var c3 = require('c3');
-
 var counter = Math.ceil((Math.random() * 1000));
 (function () {
   angular.module('c3-angularjs', [])
